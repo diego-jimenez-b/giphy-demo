@@ -16,12 +16,12 @@ const GifDetails = ({
     <div className='gif-details'>
       <h1>{title}</h1>
       <span>Rating: {rating}</span>
-      <a href={giphyUrl} target='_blank'>
+      <a href={giphyUrl} target='_blank' rel='noreferrer' >
         <img src={imageUrl} />
       </a>
 
       <div className='gif-details__user'>
-        <a href={profileUrl || '#'} target={profileUrl ? '_blank' : '_self'}>
+        <a rel='noreferrer' href={profileUrl || '#'} target={profileUrl ? '_blank' : '_self'}>
           <img src={userImage || '/icons/user.png'} />
         </a>
         <span>
