@@ -1,13 +1,27 @@
 import { GetServerSideProps } from 'next';
 import { Fragment } from 'react';
-import GifCommentsSection from '../../components/gif-details/GifCommentsSection';
-import GifDetails from '../../components/gif-details/GifDetails';
 import { getGifDetailsUrl } from '../../config/config';
 import { GifDetailsType } from '../../models/models';
+import Head from 'next/head';
+
+import GifCommentsSection from '../../components/gif-details/GifCommentsSection';
+import GifDetails from '../../components/gif-details/GifDetails';
 
 const GifDetailsPage = (props: GifDetailsType) => {
   return (
     <Fragment>
+      <Head>
+        <title>{props.title}</title>
+        <meta
+          name='description'
+          content='Discover &amp; share this Reaction GIF with everyone you know. GIPHY is how you search, share and discover GIFs.'
+        />
+        <meta name='keywords' content='gif, GIF, animated GIF' />
+        <meta name='author' content='Giphy-demo' />
+        <meta name='robots' content='index, nofollow' />
+        <link rel='canonical' href='https://giphy-demo-jade.vercel.app/' />
+      </Head>
+
       <div className='gif-details-container'>
         <GifDetails
           id={props.id}
