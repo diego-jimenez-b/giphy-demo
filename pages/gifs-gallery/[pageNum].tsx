@@ -32,7 +32,7 @@ const GifsGalleryPage = ({
           name='keywords'
           content='GIF search engine,GIF search engine,animated GIFs,best GIFs,GIF,GIFs,funny GIFs,movie GIFs,tv GIFs,reaction GIFs,cat GIFs,girl GIFs,happy GIFs,breaking bad GIFs,anime GIFs,sad GIFs,fail GIFs,star wars GIFs,memes,yes GIFs,no GIFs,create GIFs,GIF maker'
         />
-        <link rel='canonical' href='https://giphy-demo-jade.vercel.app/' />
+        <link rel='canonical' href='https://giphy-demo.vercel.app/' />
       </Head>
 
       <div className='gallery'>
