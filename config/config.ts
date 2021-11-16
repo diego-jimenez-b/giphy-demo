@@ -4,10 +4,14 @@ const config = {
 };
 
 export const getGalleryUrl = (pageNum: number): string => {
-  const perPage = 5;
+  const perPage = 6;
   const url = `${config.url}trending${config.apiKey}&limit=${perPage}&offset=${
     perPage * (pageNum - 1)
   }`;
 
   return url;
+};
+
+export const getGifDetailsUrl = (id: string) => {
+  return config.url + id + config.apiKey;
 };

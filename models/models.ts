@@ -5,3 +5,19 @@ export interface GifType {
   username: string;
   userImage: string;
 }
+
+export interface GifDetailsType extends GifType {
+  rating: string;
+  giphyUrl: string;
+  title: string;
+  importDate: string;
+  gotTrendingDate: string;
+  isVerified: boolean;
+  profileUrl: string;
+}
+
+export interface CommentType {
+  id: string;
+  text: string;
+  date: string;
+}
