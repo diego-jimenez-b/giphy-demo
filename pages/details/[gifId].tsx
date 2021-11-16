@@ -19,7 +19,6 @@ const GifDetailsPage = (props: GifDetailsType) => {
         <meta name='keywords' content='gif, GIF, animated GIF' />
         <meta name='author' content='Giphy-demo' />
         <meta name='robots' content='index, nofollow' />
-        <link rel='canonical' href='https://giphy-demo.vercel.app/' />
       </Head>
 
       <div className='gif-details-container'>
