@@ -16,13 +16,20 @@ const GifDetails = ({
     <div className='gif-details'>
       <h1>{title}</h1>
       <span>Rating: {rating}</span>
-      <a href={giphyUrl} target='_blank' rel='noreferrer' >
-        <img src={imageUrl} />
+      <a href={giphyUrl} target='_blank' rel='noreferrer'>
+        <img src={imageUrl} alt={`gif ${title}`} />
       </a>
 
       <div className='gif-details__user'>
-        <a rel='noreferrer' href={profileUrl || '#'} target={profileUrl ? '_blank' : '_self'}>
-          <img src={userImage || '/icons/user.png'} />
+        <a
+          rel='noreferrer'
+          href={profileUrl || '#'}
+          target={profileUrl ? '_blank' : '_self'}
+        >
+          <img
+            src={userImage || '/icons/user.png'}
+            alt={`go to author profile`}
+          />
         </a>
         <span>
           {username || 'anonymous'}
@@ -30,6 +37,7 @@ const GifDetails = ({
             <img
               className='gif-details__user--checked'
               src='/icons/checked.png'
+              alt='verified'
             />
           )}
         </span>

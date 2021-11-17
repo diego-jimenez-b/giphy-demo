@@ -36,14 +36,14 @@ const Home: NextPage = () => {
         <div className='home__gallery'>
           <img
             crossOrigin='anonymous'
-            alt=''
+            alt='sample gif 1'
             src={
               'https://media3.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif?cid=ecf05e47jinmou594vkh4d4oiz0sdglvmygydsim4vp4rhmk&rid=giphy.gif&ct=g'
             }
           />
           <img
             crossOrigin='anonymous'
-            alt=''
+            alt='sample gif 2'
             src={
               'https://media2.giphy.com/media/l3E6IlIx5f9nVjd84/giphy.gif?cid=ecf05e47qg1nniqwolabs48b34ka9tjscck8iwyk911413nz&rid=giphy.gif&ct=g'
             }

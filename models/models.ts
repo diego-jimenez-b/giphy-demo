@@ -1,6 +1,7 @@
 export interface GifType {
   id: string;
   slug: string;
+  title: string;
   imageUrl: string;
   username: string;
   userImage: string;
@@ -9,7 +10,6 @@ export interface GifType {
 export interface GifDetailsType extends GifType {
   rating: string;
   giphyUrl: string;
-  title: string;
   importDate: string;
   gotTrendingDate: string;
   isVerified: boolean;

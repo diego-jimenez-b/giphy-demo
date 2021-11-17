@@ -69,6 +69,7 @@ export const getStaticProps: GetStaticProps<GifsGalleryProps> = async (
       gifs: data.data.map((gif: any) => ({
         id: gif.id,
         slug: gif.slug,
+        title: gif.title,
         imageUrl: gif.images.fixed_height.url,
         username: gif.username,
         userImage: gif.user?.avatar_url ? gif.user.avatar_url : null,
