@@ -20,7 +20,7 @@ const Layout = (props: { children: ReactNode }) => {
         }
       >
         <div className='navigation-bar__logo' onClick={navigateHomeHandler}>
-          <img src={'/images/digital-painting.png'} />
+          <img src={'/images/digital-painting.png'} alt='Giphy-demo-icon' />
           <span>GIPHY.demo</span>
         </div>
 
@@ -32,6 +32,7 @@ const Layout = (props: { children: ReactNode }) => {
           }
           onClick={toggleDarkMode}
           src='/icons/theme-icon.png'
+          alt='change page theme'
         />
 
         <ul className='navigation-bar__links'>

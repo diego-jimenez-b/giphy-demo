@@ -13,7 +13,10 @@ const GifsList = ({ gifsList }: { gifsList: GifType[] }) => {
           </Link>
 
           <span className='gallery__list__user'>
-            <img src={gif.userImage ? gif.userImage : '/icons/user.png'} />
+            <img
+              src={gif.userImage ? gif.userImage : '/icons/user.png'}
+              alt={`${gif.username || 'anonymous'}-profile-picture`}
+            />
             {gif.username ? gif.username : 'anonymous'}
           </span>
         </li>
