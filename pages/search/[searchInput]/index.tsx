@@ -34,7 +34,7 @@ const userSearch = ({ gifs, searchInput }: userSearchProps) => {
       {gifs.length !== 0 && <GifsList gifsList={gifs} />}
       {gifs.length === 0 && (
         <p className='search-page__message'>
-          No gifs found for: "{searchInput}"
+          No gifs found for: &quot;{searchInput}&quot;
         </p>
       )}
     </Fragment>
