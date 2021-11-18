@@ -15,3 +15,7 @@ export const getGalleryUrl = (pageNum: number): string => {
 export const getGifDetailsUrl = (id: string) => {
   return config.url + id + config.apiKey;
 };
+
+export const getSearchUrl = (input: string): string => {
+  return `${config.url}search${config.apiKey}&q=${input}&limit=10`;
+};

@@ -526,6 +526,86 @@ button.gallery__pagination--selected:hover {
 }
 
 /* --------------------- */
+/* --------Search------- */
+/* --------------------- */
+
+.search-page__title {
+  text-align: center;
+  margin: 33px 0 0;
+}
+.search-page__message {
+  text-align: center;
+  margin: 55px 0;
+  font-size: 19px;
+}
+.search-page__title--user {
+  margin-bottom: 15px;
+}
+.search-form {
+  text-align: center;
+  padding: 35px 10px 0;
+}
+.search-form > span {
+  border: 2px solid black;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  max-width: 550px;
+}
+.search-form__input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 12px 17px;
+  font-size: 19px;
+}
+.search-form > span > input[type='image'] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 66%;
+}
+.search-form--dark > span {
+  border-color: var(--light-gray);
+  background-color: rgb(68, 68, 68);
+}
+.search-form--dark input {
+  color: white;
+}
+.search-form__input:focus {
+  outline: none;
+}
+.search-form--dark > span > input::placeholder {
+  color: rgb(228, 228, 228);
+}
+
+@media screen and (max-width: 600px) {
+  .search-page__title {
+    font-size: 27px;
+  }
+  .search-form__input {
+    padding: 9px 14px;
+    font-size: 17.5px;
+  }
+  .search-page__message {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .search-page__title {
+    font-size: 25px;
+  }
+  .search-form__input {
+    font-size: 15px;
+  }
+  .search-page__message {
+    font-size: 16px;
+  }
+}
+
+/* --------------------- */
 /* --------Modal-------- */
 /* --------------------- */
 
